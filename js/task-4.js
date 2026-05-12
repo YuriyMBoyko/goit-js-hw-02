@@ -9,22 +9,18 @@ function getShippingCost(country){
   const deliveryFeeAustralia = 170;
 
   const countryJamaica = "Jamaica";
-  const deliveryFeeJamaica = "120";
+  const deliveryFeeJamaica = 120;
 
 
   switch (country.toLowerCase()){
     case countryChina.toLowerCase():
       return `Shipping to ${countryChina} will cost ${deliveryFeeChina} credits`;
-      break;
     case countryChile.toLowerCase():
       return `Shipping to ${countryChile} will cost ${deliveryFeeChile} credits`;
-      break;
     case countryAustralia.toLowerCase():
       return `Shipping to ${countryAustralia} will cost ${deliveryFeeAustralia} credits`;
-      break;
     case countryJamaica.toLowerCase():
       return `Shipping to ${countryJamaica} will cost ${deliveryFeeJamaica} credits`;
-      break;
     default:
       return "Sorry, there is no delivery to your country";
   }
